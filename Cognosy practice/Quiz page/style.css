@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url();
+}
+
+.myNavbar{
+    height: 5vh;
+    background-color: rgb(10, 158, 101);
+    padding: 20px 10px;
+}
+
+.quit{
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+    list-style: none;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-right: 3vw;
+}
+
+.quit > li > a{
+    text-decoration: none;
+    color: white;
+}
+.images{
+    display: none;
+}
+
+.imageDisplayer{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    height: 45vh;
+    width: max-content;
+    display: flex;
+    /* visibility: hidden; */
+    justify-self: center;
+    gap: 2vw;
+    margin-top: 10vh;
+    justify-content: center;
+    box-shadow: -3px 4px 20px 1px;
+}
+
+.imageDisplayer > img {
+    width: max-content;
+    /* aspect-ratio: 9/16; */
+}
+
+.Answer{
+    margin-top: 10vh;
+    height: 4vh;
+    display: flex;
+    gap: 0.5vw;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+
+.Answer > input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.2px dashed black;
+    text-align: center;
+    font-size: 0.9em;
+    
+}
+
+.Answer > input::placeholder{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.short{
+    width: 13%;
+}
+
+
+.buttons{
+    margin-top: 10vh;
+    display: flex;
+    justify-content:space-around;
+}
+
+.buttons > input{
+    color: white;
+    width: 15vw;
+    height: 7vh;
+    border: none;
+    border-radius: 4px;
+}
+
+.colour-btn{
+    background: radial-gradient(ellipse farthest-corner at top left,rgb(2, 238, 2), green, rgb(3, 78, 3), black );
+}
+@media screen and (max-width: 700px){
+    .imageDisplayer{
+        width: 80%;
+    }
+
+    .buttons > input{
+        width: 20vw;
+    }
+}

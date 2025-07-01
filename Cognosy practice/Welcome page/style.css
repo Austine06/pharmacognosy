@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:url(Cogn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar1{
+    position: fixed;
+    background-color: rgba(3, 92, 3, 0.85);
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 10vh;
+    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
+}
+
+.navbar2{
+    display: none;
+}
+
+.navbar1 > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    position: relative;
+    list-style: none;
+    font-size: 1.2em;
+    justify-content: end;
+    padding-right: 3%;
+    font-weight: 600;
+    /* border: 1px solid red; */
+    margin-top: 2%;
+}
+
+.navbar1 > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-element{
+    background-image: url(Favicon.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: green;
+    color: transparent;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 47vh;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-shadow: 15px 15px 0.5px rgb(12, 12, 12);
+    width: 60vw;
+    /* border: 2px solid blue; */
+}
+h1:last-child{
+    color: rgb(3, 85, 3);
+}
+
+
+button{
+    margin-top: 24vh;
+    margin-left: 85%;
+    margin-bottom: 5vh;
+    width: 10vw;
+    height: 6vh;
+    background: linear-gradient(60deg, rgba(0, 128, 0, 0.7) 10%, rgba(25, 122, 25, 0.7), rgba(0, 14, 0, 1));
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+}
+
+
+.description-section{
+    background: linear-gradient(80deg, rgba(0, 128, 0, 0.9) 10%, rgba(25, 122, 25, 0.9), rgba(2, 73, 2, 0.9), rgba(0, 8, 0, 1) );;
+    height: 70vh;
+    padding-top: 5%;
+}
+
+.page-description{
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 50vw;
+    display: flex;
+    justify-self: center;
+}
+
+
+.about-text{
+    margin-top: 5vh;
+    font-size: 1.5em;
+    color: white;
+}
+
+.description-section > h1{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 10vh;
+    font-size: 2.2em;
+} 
+
+.description-section > h1 > span{
+    background: linear-gradient(70deg ,black 2%, rgb(3, 65, 3),rgba(7, 189, 7, 0.7), rgb(3, 240, 3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-left: 5px;
+}
+
+abbr{
+    text-decoration: none;
+}
+footer{
+    display: grid;
+    grid-row: 1;
+    flex-direction: row;
+    height: 30vh;
+    background-color: rgb(1, 48, 1);
+}
+footer div{
+    display: grid;
+    grid-row: inherit;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:500px) {
+    .navbar2 {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* border: 1px solid red; */
+        height: 10vh;
+        /* background-color: rgba(62, 231, 62, 0.8); */
+    }
+    .navbar2 > a{
+        position: relative;
+        left: 10px;
+        top: 7px;
+    }
+
+    .navbar2 > a::target-text {
+        display: none;
+        visibility: hidden;
+    }
+
+    .navbar2 > a > img{
+        width:43px;
+        height:50px;
+    }
+
+    .navbar1{
+        display: none;
+    }
+    .header-element{
+        font-size: 2.8em;
+        padding: 3px;
+        margin-top: 42vh;
+        /* border: 1px solid blue; */
+        width: 80vw;
+        text-shadow: none;
+    }
+
+    .page-description{
+        width: 80vw;
+        /* border: 1px solid blue ; */
+    }
+
+    .about-text{
+        margin-top: 2vh;
+        font-size: 1.5em;
+    }
+    
+    button{
+        width: 20vw;
+        display: flex;
+        justify-self: end;
+        margin-right: 3vw;
+        text-align: center;
+    }
+
+    .description-section{
+        height: 50vh;
+    }
+
+}
